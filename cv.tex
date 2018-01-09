@@ -1,0 +1,368 @@
+\documentclass{article}
+
+\usepackage[
+  hmargin=1cm,
+  vmargin=1cm,
+  footskip=0cm % make footer visible
+]{geometry}
+
+\usepackage{marvosym} % for \Mobilefone & \Letter symbols
+\usepackage[alpine]{ifsym} % for \Hut symbol
+\usepackage{pifont}
+\usepackage{fontawesome} % for \faGithubAlt, etc.
+
+\usepackage{libertine}
+
+% Disable ligatures, so that all text is searchable and copy-paste works
+\usepackage{microtype}
+\DisableLigatures{encoding = *, family = * }
+
+\usepackage{graphicx}
+
+\usepackage{xcolor} % for defining colors
+\definecolor{info-color}{HTML}{FAE2A2} % color for info box
+\definecolor{headings-color}{HTML}{690E0F} % headers text color
+\definecolor{links-color}{HTML}{1D4E59} % text color for links
+
+\usepackage{hyperref} % for hypertext command \href
+\hypersetup{colorlinks, urlcolor=links-color}
+
+\usepackage{fancyhdr} % package for custom headers & footers
+\pagestyle{fancy} % enable this package for this document
+\fancyhf{} % clear the default layout
+%\rfoot{\textsc{Last update: \today}}
+\fancypagestyle{firststyle}
+{
+  \cfoot{\textit{Continued on second page.}}
+}
+
+\usepackage{titlesec} % for customizing \section
+\titleformat{\section}{\color{headings-color}\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+\titlespacing{\section}{0pt}{0pt}{5pt} % spacing around titles
+
+\newcommand{\whatwherewhen}[3]{
+\noindent\begin{tabular*}{\columnwidth}{@{}@{\extracolsep{\fill}}lr@{}}
+#1, #2 & \textsc{#3}
+\end{tabular*}}
+
+\usepackage{enumitem} % to access noitemsep and nolistsep options of itemize
+
+\usepackage{tabularx}
+
+\usepackage{float}
+
+\newcommand{\smallvskip}{\vskip2mm}
+
+\begin{document}
+
+\thispagestyle{firststyle}
+
+\begin{table}
+\centering
+\begin{tabular}{cc}
+
+\begin{tabular}{c}
+{\centering \huge Anton Dergunov} \\
+\includegraphics{logo-crop}
+\end{tabular}
+
+&
+
+\colorbox{info-color}{
+\begin{tabular}{c|l|c|l}
+\Mobilefone & +44 77 999 41 638 &
+  \faGithubAlt & \href{https://github.com/anton-dergunov}{github.com/anton-dergunov} \\
+\Letter & \href{mailto:anton.dergunov@gmail.com}{anton.dergunov@gmail.com} &
+  \faLinkedin & \href{https://www.linkedin.com/in/anton-dergunov-ba00a110/}{www.linkedin.com/in/anton-dergunov-ba00a110/}\\
+\faGlobe & \href{my web site}{my web site} &
+  \faWordpress & \href{my blog}{my blog}
+\end{tabular}}
+
+\end{tabular}
+\end{table}
+
+% TODO consider eliminating
+% Fill this all in experience
+
+\raggedright
+
+% {\color{headings-color}\scshape\Large Highlights}:
+% Experience in Machine Learning, Natural Language Processing,
+% Artificial Intelligence, Knowledge Representation. \ding{118}
+% Parallel, concurrent and distributed software research and
+% development. \ding{118} Performance analysis of serial and parallel
+% software; algorithmic, threading and machine-dependent performance
+% optimization. \ding{118} Formal software verification. \ding{118}
+% Demonstrated ability to adapt and implement results of research
+% projects in commercial software products.
+
+
+\section{Employment}
+
+\whatwherewhen{Lead Application Developer}{\href{https://www.jpmorganchase.com/}
+  {JP Morgan}}{Current, From May 2017}
+
+\begin{itemize}[noitemsep, nolistsep]
+
+\item Implementation of backends of monitoring systems used in the bank, for
+tracking engineering practices of all bank applications and source code
+repository commits (\textsc{Java}, \textsc{Spring}, \textsc{Python},
+\textsc{SQL}, \textsc{MongoDB}).
+
+\item Conducted phone screening interviews.
+
+\end{itemize}
+
+\smallvskip
+\whatwherewhen{Software Engineer}{\href{https://yandex.com/company/}{Yandex}}
+  {January 2016 - May 2017}
+
+\textit{Feature engineering for video search ranking.}
+
+\begin{itemize}[noitemsep, nolistsep]
+
+\item Implemented calculation of several new characteristics of Internet Web
+videos and evaluated their usefulness as factors in
+\href{https://yandex.com/company/technologies/matrixnet/}{MatrixNet}
+machine learning algorithm, used in \href{https://yandex.com/video/}
+{Yandex Video Search} to query and rank videos on a search result page.
+Several of these factors contributed to improvement of video ranking
+quality as demonstrated by several metrics.
+
+\item Implemented and evaluated several new factors for ranking videos in
+\href{https://yandex.com/video/}{Yandex Video Search}. (\textsc{C++},
+\textsc{Python}, \textsc{MapReduce}, \textsc{machine learning},
+\textsc{feature engineering}). These factors are used by
+\href{https://yandex.com/company/technologies/matrixnet/}{MatrixNet}
+machine learning algorithm to order videos a search result page. Integration
+of these features resulted in improvement of video ranking quality as
+demonstrated using several metrics.
+
+\item Implemented infrastructure and made several experiments of large-scale
+web text classification for several tasks using logistic regression,
+LSTM and other algorithms (\textsc{natural language processing},
+\textsc{Vowpal Wabbit}, \textsc{deep learning}). Using this infrastructure
+for classification of YouTube videos allowed to improve video ranking quality.
+
+\item Collaborated across teams and made research to improve integration of
+Yandex Video Search results on the main \href{https://yandex.com/}
+{Yandex Web Search} page.
+
+\end{itemize}
+
+\smallvskip
+\whatwherewhen{Senior Software Development Engineer}{\href{http://intel.com}
+{Intel}}{February 2006 - December 2015}
+
+%\textit{Software and Solutions Group / Developer Products Division / Technical Computing, Analyzers and Runtime department.}
+
+\textit{Applied research in performance analysis and implementation of performance
+tuning tools.}
+
+\begin{itemize}[noitemsep, nolistsep]
+\item Implemented capability to represent knowledge about performance issues
+  in applications (using \textsc{Python} code) and their automatic detection for
+  \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}{Intel VTune
+  Amplifier} and \href{https://software.intel.com/en-us/intel-advisor-xe}
+  {Intel Advisor} products (\textsc{knowledge representation}).
+
+\item Defined metrics and methodology to identify parts of an application
+  that are best suited for execution on main CPU or for offload to
+  \href{https://www.intel.com/content/www/us/en/products/processors/xeon-phi/xeon-phi-processors.html}
+  {Intel Xeon Phi} processor, and implemented a tool automate detection of such
+  parts.
+
+%\item Made analysis of performance analysis tools....
+
+
+\item Research of new approaches in performance analysis,
+  software development tools, hardware architecture.
+\item Full cycle of design and development (designing,
+  prototyping, research, reviewing, documenting, planning, etc.) of
+  threading and performance profilers:
+  \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}{
+    VTune Amplifier XE},
+  \href{http://software.intel.com/en-us/articles/intel-performance-tuning-utility}
+  {Performance Tuning Utility}, VTune Performance Analyzer
+  8.x and 9.x, %(currently superseded by VTune Amplifier XE)
+  \href{http://software.intel.com/en-us/intel-trace-analyzer} {Intel
+  Trace Analyzer and Collector}
+  (\textsc{C++}, \textsc{Java}, \textsc{Python}). Mentorship (5 collegues).
+\item Responsibility for several major data visualization and data
+  providing components in these products, working with product
+  architect to define their design, implementing innovative features.
+\item Gained expertise in performance analysis of serial and parallel
+  software; algorithmic, threading and machine-dependent performance
+  optimization; parallel, concurrent and distributed software research
+  and development (\textsc{MPI}, \textsc{OpenMP}).
+\item Performed major refactoring of some data visualization
+  components (Model-View-ViewModel design pattern, ``true'' unit
+  tests, significantly reducing code duplication) without sacrificing
+  implementation of new features using Test Driven Development.
+% TODO reducing code duplication by what fraction?
+% TODO lowering maintenance cost: how many people?
+%\item Implemented detection of MPI communication performance problems
+%  in \href{http://software.intel.com/en-us/intel-trace-analyzer}{Intel
+%    Trace Analyzer and Collector} (based on my PhD research).
+%\item Mentorship of 5 new collegues (development environment, initial
+%  help with development tasks, major profiling concepts).
+% Olga Kasatkina
+% another intern joined in the same time as Olga
+% Vasily Starikov
+% Konstantin Nevidin
+% Alexander Raud
+\end{itemize}
+
+
+\smallvskip
+\whatwherewhen{Lecturer, Research Advisor}{\href{http://unn.ru/eng}{Lobachevsky State University of Nizhni Novgorod}}{2009 - 2012}
+
+\begin{itemize}[noitemsep, nolistsep]
+\item Research advisor for 3 bachelor and 5 master students (topics in
+  artificial intelligence, machine learning, natural language
+  processing, software verification, parallel programming, software
+  engineering).
+\item Created and taught courses ``Artificial Intelligence'' (2010, 2011),
+  ``Databases and Expert Systems'' (2009-2012).
+\item Assistant for
+  \href{http://se.inf.ethz.ch/courses/2012b_fall/dose/}{Distributed
+    and Outsourced Software Engineering project} (2011, 2012):
+  provided support for projects of students.
+\end{itemize}
+
+
+\smallvskip
+\whatwherewhen{Software Designer}{\href{http://meranetworks.com}{Mera
+    Networks} (outsourced software development services)}{October 2003 - February 2006}
+
+%\textit{Department of Wireless Platform Development, outsourced project with
+%\href{http://nortel.com}{Nortel Networks}}.
+
+\begin{itemize}[noitemsep, nolistsep]
+\item Development of cellular base stations emulation software
+  (\textsc{C++}, \textsc{Java}, networking) for
+  \href{http://nortel.com}{Nortel Networks}. Mentorship (3 collegues).
+\item Participated in major redesign of the data model part of this
+  software that resulted in significant improvements in execution
+  speed and memory consumption (allowing to handle prevously
+  unsupported amount of data).
+%\item Mentorship of 3 new collegues (development environment, initial
+%  help with development tasks).
+%\item Author of 7 design documents and coauthor of 4 design documents.
+\end{itemize}
+
+\section{Education}
+
+\whatwherewhen{PhD in Theoretical Computer Science}{\href{http://unn.ru}{Lobachevsky State University of Nizhni Novgorod}}{July 2008 - July 2011}
+
+Thesis: Models, methods and tools of knowledge representation for
+improving performance of MPI applications. After
+\href{http://www.nntu.ru/RUS/aspir_doktor/avtoreferat/view.php?id=245}
+{defence} implemented some results of this work in
+\href{http://software.intel.com/en-us/intel-trace-analyzer} {Intel
+Trace Analyzer and Collector}, in its \href{https://software.intel.com/en-us/node/561522}{Performance Assistant}
+capability. (\textsc{C++}).
+
+\smallvskip
+\whatwherewhen{Specialist Degree in Applied Computer Science}{\href{http://unn.ru}{Lobachevsky State University of Nizhni Novgorod}}{September 2001 - May 2006}
+
+% May be this is not so interesting
+Thesis: Neural network model for knowledge representation and extraction.
+
+\smallvskip
+\href{http://romip.ru/russir2013/}{Russian Summer School in Information Retrieval} \ding{105}
+\href{http://www.computational-logic.org/content/events/iccl-ss-2013/index.php?id=24}{Semantic Web: Ontology Languages and Their Use} \ding{105}
+\href{http://almada2013.ru/en}{Microsoft School on ALgorithms for MAssive DAta} \ding{105}
+\href{http://movep.lif.univ-mrs.fr/}{Winter School on Modeling and Verifying Parallel Processes} \ding{105}
+\href{http://laser.inf.ethz.ch/2012/}{Summer School on Software Engineering: Innovative Languages for Software Engineering} \ding{105}
+\href{http://research.microsoft.com/en-us/events/rss2012/}{Microsoft Summer School on Concurrency} \ding{105}
+\href{http://research.microsoft.com/en-us/um/redmond/events/sssev2011/}{Microsoft Summer School in Software Engineering and Verification}
+
+%\section{Personal Projects}
+% TODO fill it when I can
+% For example, can point to blog or articles collection
+% Need personal projects badly!
+% http://cs.stackexchange.com/users/8389/anton-dergunov
+
+%\section{Awards}
+
+%\begin{itemize}[noitemsep, nolistsep]
+%\item Award of Excellence: distinguished participant at
+%\href{http://research.microsoft.com/en-us/events/rss2012/}{Microsoft Summer School on Concurrency}
+%(St. Petersburg, Russia, 2012)
+%\item Internal awards at Intel.
+%\end{itemize}
+
+% Feedback during performance reviews
+% characterizes with the following: ``self-dependenct... started to
+% [work on project] ... after a week of his work at Intel without a lot
+% of supervision'', ``[his] code is easy to read and maintain; he
+% strives for good design of components he owns; when he got [skip]
+% ownership he immediately started refactoring work to normalize the
+% code'', ``even if [customer] requests were said in informal way, he
+% tried to undersand what can be improved'', ``capable of doing
+% effectively things which would cause performance hits being done by
+% other people'', ``the implementation ... is always provided in high
+% quality and with expected feature set''.
+
+\section{Technical Skills}
+
+\begin{tabular}{r|l}
+Concepts &
+Machine Learning, Artificial Intelligence, Natural Language Processing, Neural Networks, \\
+&
+Knowledge Representation, Big Data, Map Reduce, Performance Analysis and Tuning, \\
+&
+High-Performance Computing, Parallel, Concurrent and Distributed Software, \\
+&
+Object-Oriented Design, Design Patterns \\
+Programming Languages &
+\textsc{C++}, \textsc{C}, \textsc{Python}, \textsc{Java},
+\textsc{Haskell}, \textsc{Prolog}, \textsc{SQL}, Unix shells \\
+Operating systems &
+\textsc{Windows}, various distributions of \textsc{Linux} \\
+Other &
+\textsc{MPI}, \textsc{OpenMP}, \textsc{PThreads}, \textsc{UML}, \LaTeX,
+\textsc{wxWidgets}, \textsc{Spring}, \textsc{PIN}, \textsc{XML},
+regular expressions \\
+Languages &
+English (fluent), Italian (basic), German (learning), Russian (native).
+
+% Need to revise parallel libraries and add:
+% Parallel programming &
+% MPI, PThreads, OpenMP, TBB, Microsoft threads
+% Need to revise XPath, XQuery, XSLT
+% Need to extend this list badly...
+
+\end{tabular}
+
+\newpage
+
+\section{Publications}
+
+% TODO need more publications
+
+\begin{itemize}[noitemsep, nolistsep]
+\item Anton
+  Dergunov. \href{http://anton-dergunov.ru/publications/proving_complexity_v2.pdf}
+  {Proving Termination and Computational Complexity of Computer
+  Programs}. Abstract of poster for ``CSEDays. Algorithms and Complexity''
+  summer school.
+\item Anton
+  Dergunov. \href{http://themonadreader.files.wordpress.com/2013/08/issue221.pdf}
+  {Generalized algebraic data types in Haskell}.
+  The Monad.Reader Issue 22, pp. 5-39.
+\item Anton
+  Dergunov. \href{http://anton-dergunov.ru/publications/mpi_performance.pdf}
+  {Specification and automatic detection of performance problems in
+    message passing (MPI) applications}. Radioelectronic and Computer
+  Systems, 2012, 7(59), pp. 217-222.
+\item Anton Dergunov. \href{http://pavt.susu.ru/2012/full/159.pdf}
+  {Expert methodology for performance analysis of communicating
+    processes in MPI applications}. In proceedings of conference
+  ``Parallel Computational Technologies'', Chelyabinsk (Russia),
+  2012., pp. 134-144 (in Russian).
+\end{itemize}
+
+
+\end{document}

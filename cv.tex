@@ -45,7 +45,8 @@
 #1, #2 & \textsc{#3}
 \end{tabular*}}
 
-\usepackage{enumitem} % to access noitemsep and nolistsep options of itemize
+\usepackage{enumitem}
+\setlist[itemize]{nosep, itemsep=0.8mm, topsep=0.8mm}
 
 \usepackage{tabularx}
 
@@ -93,13 +94,15 @@
 
 \section{Highlights and Skills}
 
-\begin{itemize}[noitemsep, nolistsep]
+\begin{itemize}
 
 \item Experience and high interest in applying Machine Learning. Python,
-  Jupyter Notebooks, NumPy, Pandas, SciKit-Learn, TensorFlow, Vowpal Wabbit.
+  Jupyter Notebooks, NumPy, Pandas, SciKit-Learn, TensorFlow, Matplotlib, Vowpal Wabbit.
   Linear models, SVM, Decision Trees, Ensemble Learning, Gradient Boosting,
   Neural Networks, Deep Learning, CNN, RNN, LSTM, Autoencoders, Knowledge
   Representation, Natural Language Processing.
+% Describe specifically which areas I applied ML (such as click through
+% rate prediction, search engine ranking, etc.)
 \item Experience in all cycles of large software development (design, prototype,
   research, review, documentation, planning, implementation, etc.) C,
   C++, Java, Python, Bash, SQL, MongoDB. Linux, Windows, cross-platform. Focus
@@ -133,12 +136,13 @@
 
 \textit{Web services implementation.}
 
-\begin{itemize}[noitemsep, nolistsep]
+\begin{itemize}
 
-\item Implementation of backends of monitoring systems used in the bank, for
+\item Implementation of backends of monitoring systems for
   tracking engineering practices of all bank applications and source code
   repository commits. (\textsc{Java}, \textsc{Spring}, \textsc{Python},
-  \textsc{SQL}, \textsc{MongoDB}, \textsc{Cloud Foundry}) Phone screening interviews.
+  \textsc{SQL}, \textsc{MongoDB}, \textsc{MariaDB}, \textsc{Oracle Database},
+  \textsc{Cloud Foundry}) Phone screening interviews.
 
 \end{itemize}
 
@@ -149,7 +153,7 @@
 
 \textit{Feature engineering for Internet video search and machine learning.}
 
-\begin{itemize}[noitemsep, nolistsep]
+\begin{itemize}
 
 \item Implemented calculation of several new characteristics of Internet
   videos and evaluated their usefulness as factors in
@@ -160,8 +164,8 @@
   quality as demonstrated by several metrics. (\textsc{C++}, \textsc{Python},
   \textsc{MapReduce}, \textsc{Machine Learning})
 
-\item Implemented infrastructure and made several experiments of large-scale
-  web text classification for several tasks using logistic regression,
+\item Implemented machine learning pipeline and made several experiments of
+  large-scale web text classification for several tasks using logistic regression,
   LSTM, word2vec and other algorithms. (\textsc{Natural Language Processing},
   \textsc{Vowpal Wabbit}, \textsc{Deep Learning})
 
@@ -182,7 +186,7 @@
 \textit{Applied research in performance analysis and implementation of
 performance tuning tools.}
 
-\begin{itemize}[noitemsep, nolistsep]
+\begin{itemize}
 
 \item Gained expertise in performance analysis of serial and parallel
   software; algorithmic, threading and machine-dependent performance
@@ -215,7 +219,8 @@ performance tuning tools.}
   {Intel VTune Amplifier} and \href{http://software.intel.com/en-us/articles/intel-performance-tuning-utility}
   {Intel Performance Tuning Utility} from scratch. Responsibility for
   several major data visualization and data provider components in these
-  products. (\textsc{C++}, \textsc{Java}, \textsc{Python}, \textsc{OpenMP})
+  products. (\textsc{C++}, \textsc{Java}, \textsc{Python}, \textsc{OpenMP},
+  \textsc{SQLite})
   Mentorship (5 collegues).
 
 \item Implemented new approach for source-level performance information
@@ -239,18 +244,25 @@ performance tuning tools.}
 
 \textit{Research and teaching Artificial Intelligence and Machine Learning.}
 
-\begin{itemize}[noitemsep, nolistsep]
+\begin{itemize}
+
 \item Research advisor for 3 bachelor and 5 master students (topics in
   artificial intelligence, machine learning, natural language
   processing, software verification, parallel programming, software
   engineering).
+
 \item Created and taught courses ``Artificial Intelligence'' (2010, 2011),
   ``Databases and Expert Systems'' (2009-2012).
+
 \item Assistant for
   \href{http://se.inf.ethz.ch/courses/2012b_fall/dose/}{Distributed
     and Outsourced Software Engineering project} (2011, 2012):
   provided support for projects of students.
+
 \end{itemize}
+
+
+\newpage
 
 
 \smallvskip
@@ -259,7 +271,8 @@ performance tuning tools.}
 
 \textit{Telecommunication software implementation.}
 
-\begin{itemize}[noitemsep, nolistsep]
+\begin{itemize}
+
 \item Development of cellular base stations emulation software.
   (\textsc{C++}, \textsc{Java}, \textsc{Bash}, networking) Mentorship (3 collegues).
 
@@ -270,12 +283,9 @@ performance tuning tools.}
 \end{itemize}
 
 
-\newpage
-
-
 %\section{Personal Projects}
 
-%\begin{itemize}[noitemsep, nolistsep]
+%\begin{itemize}
 %\item TODO
 %\end{itemize}
 
@@ -336,7 +346,7 @@ Thesis: Neural network model for knowledge representation and extraction.
 
 % TODO need more publications
 
-\begin{itemize}[noitemsep, nolistsep]
+\begin{itemize}
 \item Anton
   Dergunov. \href{http://anton-dergunov.ru/publications/proving_complexity_v2.pdf}
   {Proving Termination and Computational Complexity of Computer

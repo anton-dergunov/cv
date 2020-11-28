@@ -100,7 +100,7 @@
 \item Experience and high interest in applying Machine Learning. Python,
   Jupyter Notebooks, NumPy, Pandas, SciKit-Learn, PyTorch, Matplotlib, Vowpal Wabbit.
   Linear models, SVM, Decision Trees, Ensemble Learning, Gradient Boosting,
-  Neural Networks, Deep Learning, CNN, RNN, LSTM, Autoencoders, Knowledge
+  Neural Networks, Deep Learning, CNN, RNN, LSTM, BERT, Autoencoders, Knowledge
   Representation, Natural Language Processing.
 % Describe specifically which areas I applied ML (such as click through
 % rate prediction, search engine ranking, etc.)
@@ -135,15 +135,26 @@
 \whatwherewhen{Senior Applied Scientist}{\href{https://www.microsoft.com/}
   {Microsoft}}{Current, From May 2018}
 
-\textit{Applied machine learning.}
+\textit{Applying machine learning in Microsoft Office products.}
 
 \begin{itemize}
 
-\item Contributed to full flow of machine learning model creation and feature
-  implementation for \href{https://www.microsoft.com/en-us/research/blog/the-story-of-an-office-ai-feature-how-ai-can-promote-efficient-meeting-preparation/}{a new feature in Microsoft Outlook}: recommendation of
-  emails and documents which are relevant to prepare for a meeting (\textsc{C\#},
-  \textsc{Python}, \textsc{SciKit-Learn}, \textsc{NumPy}, \textsc{Pandas},
-  \textsc{U-SQL}, \textsc{Gradient Boosting}).
+\item Contributed to improving relevance of recommendations of the new Meeting Insights feature in
+  Microsoft Outlook (see
+  \href{https://www.microsoft.com/en-us/research/blog/the-story-of-an-office-ai-feature-how-ai-can-promote-efficient-meeting-preparation/}{press release}
+  or
+  \href{https://support.microsoft.com/en-gb/office/use-intelligent-technology-in-outlook-on-the-web-and-outlook-com-24b30683-8340-4b69-b8ac-4193ec528a70}{documentation}).
+  This feature recommends emails and documents which are relevant for a given meeting
+  (\textsc{C\#}, \textsc{Python}, \textsc{SciKit-Learn}, \textsc{NumPy}, \textsc{Pandas},
+  \textsc{PyTorch}, \textsc{PySpark}, \textsc{LightGBM}, \textsc{Gradient Boosting}).
+
+\item Implemented and validated new features for this machine learning model,
+  by exposing new signals or choosing their best form (such as social, content
+  similarity, etc). Used BERT and related neural network architectures to improve
+  relevance (\textsc{PyTorch}). Supervised students for their research project of applying BERT.
+
+\item Explored various data sets, heuristically labelled data and their combinations
+  for model training (\textsc{Snorkel}). Conducted A/B experiments.
 
 \item Improved data extraction pipeline, which allowed to get ~50x more training
   data for machine learning algorithm and consequently improved model
@@ -151,10 +162,6 @@
   allowed to fix bias in extracted data, further improve model performance
   (AUC increased 3\%, AUPRC increased 4\%, NDCG increased 11\%) and enable 2x
   more features.
-
-\item Implemented and validated new features for this machine learning model,
-  by exposing new signals or choosing their best form (such as social, content
-  similarity, etc).
 
 \item Implemented explanation facility tool for machine learning models. It was
   demonstrated that helps to detect root causes during error analysis and
@@ -390,20 +397,16 @@ Thesis: Neural network model for knowledge representation and extraction.
 
 \section{Publications}
 
-% TODO need more publications
-
 \begin{itemize}
 \item Anton
   Dergunov. \href{http://anton-dergunov.ru/publications/proving_complexity_v2.pdf}
   {Proving Termination and Computational Complexity of Computer
   Programs}. Abstract of poster for ``CSEDays. Algorithms and Complexity''
   summer school.
-% TODO: put to arxiv, which year?
 \item Anton
   Dergunov. \href{http://themonadreader.files.wordpress.com/2013/08/issue221.pdf}
   {Generalized algebraic data types in Haskell}.
   The Monad.Reader Issue 22, pp. 5-39. Etc.
-%\item TODO blog posts
 \item Anton
   Dergunov. \href{http://anton-dergunov.ru/publications/mpi_performance.pdf}
   {Specification and automatic detection of performance problems in

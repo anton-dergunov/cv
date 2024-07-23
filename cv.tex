@@ -54,6 +54,9 @@
 
 \newcommand{\smallvskip}{\vskip2mm}
 
+\usepackage{textcomp}
+\newcommand{\mytexttilde}{\raisebox{0.5ex}{\texttildelow}}
+
 \begin{document}
 
 \thispagestyle{firststyle}
@@ -69,22 +72,12 @@
 
 &
 
-%\colorbox{info-color}{
-%\begin{tabular}{c|l|c|l}
-%\Mobilefone & +44 77 999 41 638 &
-%  \faGithubAlt & \href{https://github.com/anton-dergunov}{github.com/anton-dergunov} \\
-%\Letter & \href{mailto:anton.dergunov@gmail.com}{anton.dergunov@gmail.com} &
-%  \faLinkedin & \href{https://www.linkedin.com/in/anton-dergunov-ba00a110/}{www.linkedin.com/in/anton-dergunov-ba00a110/}\\
-%\faGlobe & \href{my web site}{my web site} &
-%  \faWordpress & \href{my blog}{my blog}
-%\end{tabular}
-%}
-
 \begin{tabular}{c|l}
 \Mobilefone & +44 77 999 41 638 \\
 \Letter & \href{mailto:anton.dergunov@gmail.com}{anton.dergunov@gmail.com} \\
-\faSkype & \href{skype:live:anton.dergunov_2?chat}{live:anton.dergunov\textunderscore2} \\ % \href{skype:live:anton.dergunov_2\%3Fchat}{live:anton.dergunov_2} \\
-\faLinkedin & \href{https://www.linkedin.com/in/anton-dergunov-ba00a110/}{www.linkedin.com/in/anton-dergunov-ba00a110/}
+\faLinkedin & \href{https://www.linkedin.com/in/anton-dergunov-ba00a110/}{www.linkedin.com/in/anton-dergunov-ba00a110/} \\
+\faWordpress & \href{https://anton-dergunov.github.io/blog/}{https://anton-dergunov.github.io/blog/} \\
+\faGithubAlt & \href{https://github.com/anton-dergunov}{https://github.com/anton-dergunov}
 \end{tabular}
 
 \end{tabular}
@@ -97,132 +90,64 @@
 
 \begin{itemize}
 
-\item Experience and high interest in applying Machine Learning. Python,
-  Jupyter Notebooks, NumPy, Pandas, SciKit-Learn, PyTorch, Matplotlib, Vowpal Wabbit.
-  Linear models, SVM, Decision Trees, Ensemble Learning, Gradient Boosting,
-  Neural Networks, Deep Learning, CNN, RNN, LSTM, BERT, Autoencoders, Knowledge
-  Representation, Natural Language Processing.
-% Describe specifically which areas I applied ML (such as click through
-% rate prediction, search engine ranking, etc.)
-\item Experience in all cycles of large software development (design, prototype,
-  research, review, documentation, planning, implementation, etc.): C,
-  C++, Java, Python, Bash, SQL, MongoDB. Linux, Windows, cross-platform. Focus
-  on software quality ranging from software design, TDD to formal software
-  verification.
-\item Expertise in parallel, concurrent and distributed software research and
-  development. Performance analysis of serial and parallel software;
-  algorithmic, threading and machine-dependent performance optimization.
-  Intel VTune Analyzer, Intel Trace Analyzer and Collector, Intel Advisor,
-  MPI, OpenMP, MapReduce.
+\item \textbf{Machine Learning}: Extensive experience and deep interest in applying machine learning techniques for information retrieval, recommendation systems, and natural language processing. Proficient in \textsc{Python}, \textsc{Jupyter Notebooks}, \textsc{NumPy}, \textsc{Pandas}, \textsc{SciKit-Learn}, \textsc{PySpark}, \textsc{PyTorch}, \textsc{LightGBM}, and \textsc{Azure Machine Learning}. Skilled in linear models, SVM, Decision Trees, Ensemble Learning, Gradient Boosting, Neural Networks, Deep Learning, Large Language Models, Graph Neural Networks, CNN, RNN, LSTM, BERT, Knowledge Representation, model interpretability, exploratory data analysis, and working with eyes-off data. Successfully developed and deployed models in production environments and built ML pipelines, demonstrating significant improvements in key metrics. %(e.g., click-through rate, NDCG).
+
+\item \textbf{Software Development}: Comprehensive experience in all phases of large software development projects, including design, prototyping, research, review, documentation, planning, and implementation. Proficient in \textsc{C}, \textsc{C++}, \textsc{Java}, \textsc{Python}, \textsc{Bash}, and \textsc{SQL}. Skilled in \textsc{Linux}, \textsc{Windows}, and \textsc{cross-platform} development. Focused on software quality, from design and TDD to formal software verification. Expertise in parallel, concurrent, and distributed software development, with a strong background in performance analysis and optimization of both serial and parallel software. Mentored and supervised colleagues and interns. %, contributing to team success and project completion.
 
 \end{itemize}
-
-% {\color{headings-color}\scshape\Large Highlights}:
-% Experience in Machine Learning, Natural Language Processing,
-% Artificial Intelligence, Knowledge Representation. \ding{118}
-% Parallel, concurrent and distributed software research and
-% development. \ding{118} Performance analysis of serial and parallel
-% software; algorithmic, threading and machine-dependent performance
-% optimization. \ding{118} Formal software verification. \ding{118}
-% Demonstrated ability to adapt and implement results of research
-% projects in commercial software products.
 
 
 \section{Employment}
 
-\whatwherewhen{Senior Applied Scientist}{\href{https://www.microsoft.com/}
-  {Microsoft}}{May 2018 - Present}
+\whatwherewhen{Senior Applied Scientist}{\href{https://www.microsoft.com/}{Microsoft}}{May 2018 - Present}
 
 \textit{Applying machine learning in Microsoft Office products.}
 
 \begin{itemize}
 
-\item Contributed to improving relevance of recommendations of the new Meeting Insights feature in
-  Microsoft Outlook (see
-  \href{https://www.microsoft.com/en-us/research/blog/the-story-of-an-office-ai-feature-how-ai-can-promote-efficient-meeting-preparation/}{press release}
-  or
-  \href{https://support.microsoft.com/en-gb/office/use-intelligent-technology-in-outlook-on-the-web-and-outlook-com-24b30683-8340-4b69-b8ac-4193ec528a70}{documentation}).
-  This feature recommends emails and documents which are relevant for a given meeting
-  (\textsc{Python}, \textsc{SciKit-Learn}, \textsc{NumPy}, \textsc{Pandas},
-  \textsc{PyTorch}, \textsc{PySpark}, \textsc{LightGBM}, \textsc{Gradient Boosting}, \textsc{C\#}).
+\item People Search:
 
-\item Implemented and validated new features for this machine learning model,
-  by exposing new signals or choosing their best form (such as social, content
-  similarity, etc). Used BERT and related neural network architectures to improve
-  relevance (\textsc{PyTorch}). Supervised students for their research project of applying BERT.
+  \begin{itemize}
 
-\item Explored various data sets, heuristically labelled data and their combinations
-  for model training (\href{https://snorkel.ai/}{Snorkel}). Conducted A/B experiments.
+  \item Built from scratch the pipeline for collecting ``eyes-off'' training and testing data, monitoring its quality, and training ranking and classification models with offline evaluation, producing a model ready for product integration. Optimized the pipeline's performance to process large volumes of click log data. The model is used for \href{https://www.youtube.com/watch?v=a6HO4ekmmjU}{people ranking in many Microsoft products} (such as Teams, Outlook, Bing, Windows). Deployed several models using this pipeline to production, demonstrating online metrics improvements (such as up to a 4\% increase in click-through rate and improvements in time to success). (\textsc{Azure Machine Learning}, \textsc{Python}, \textsc{PySpark}, \textsc{LightGBM}, \textsc{ONNX}, \textsc{Gradient Boosting})
 
-\item Improved data extraction pipeline, which allowed to get ~50x more training
-  data for machine learning algorithm and consequently improved model
-  performance (AUC increased 3\%, AUPRC increased 12\%). Subsequent data analysis
-  allowed to fix bias in extracted data, further improve model performance
-  (AUC increased 3\%, AUPRC increased 4\%, NDCG increased 11\%) and enable 2x
-  more features.
+  \item Implemented the \href{https://www.cs.cornell.edu/~bindel/blurbs/edgeppr.html}{Personalized PageRank} algorithm over organization people graphs for this people ranker, resulting in a 2.15\% increase in NDCG@1 and a 1.21\% increase in NCDG@3. Presented this work at an internal conference and tested other graph-based approaches produced by different teams.
 
-\item Implemented explanation facility tool for machine learning models. It was
-  demonstrated that helps to detect root causes during error analysis and
-  identify required treatment much quicker.
+  \item Conducted multiple online A/B experiments, analyzing metrics to test new features or resolve issues.
 
-\item Prototyped complete pipeline for data extraction, feature extraction,
-  training and validation of document-to-document recommendation system. Help
-  and guidance for a colleague to implement email-to-email recommendation
-  prototype.
+  \end{itemize}
 
-% TODO use these links
-%https://support.office.com/en-gb/article/use-intelligent-technology-in-outlook-on-the-web-24b30683-8340-4b69-b8ac-4193ec528a70?ui=en-US&rs=en-GB&ad=GB
-%https://techcommunity.microsoft.com/t5/Outlook-Blog/Save-time-with-intelligence-that-works-for-you-in-Outlook-on-the/ba-p/386950
-%https://www.neowin.net/news/microsoft-introduces-new-smart-features-for-outlook-on-the-web
+\item Document recommendation for Microsoft Outlook:
+
+  \begin{itemize}
+
+  \item Enhanced the relevance of recommendations in the Meeting Insights feature of Microsoft Outlook (\href{https://www.microsoft.com/en-us/research/publication/calendar-aware-proactive-email-recommendation/}{paper}, \href{https://www.microsoft.com/en-us/research/blog/the-story-of-an-office-ai-feature-how-ai-can-promote-efficient-meeting-preparation/}{press release}, (\href{https://support.microsoft.com/en-gb/office/use-intelligent-technology-in-outlook-on-the-web-and-outlook-com-24b30683-8340-4b69-b8ac-4193ec528a70}{documentation}) using ML techniques and various heuristics. This feature recommends emails and documents relevant to meetings. (\textsc{Python}, \textsc{SciKit-Learn}, \textsc{NumPy}, \textsc{Pandas}, \textsc{PyTorch}, \textsc{LightGBM}, \textsc{Gradient Boosting}, \textsc{C\#})
+
+  \item Enhanced the data extraction pipeline, increasing the amount of training data by \mytexttilde 50x, which improved model performance (AUC up by 3\%, AUPRC up by 12\%). Further data analysis improved model performance (AUC up by 3\%, AUPRC up by 4\%, NDCG@3 up by 11\%) and enabled twice as many features.
+
+  \item Developed and validated new features for this machine learning model by identifying and optimizing new signals (e.g., social, content similarity, key phrases).
+
+  \item Conducted extensive experiments using the \textsc{BERT} model and related neural network architectures to improve content similarity features in Meeting Insights: verified the model on multiple datasets, performed error analysis and comparison with existing features, and distilled BERT into simpler models. Integrating the model showed a 3\% increase in NDCG@3. (\textsc{BERT}, \textsc{Deep Learning}, \textsc{PyTorch})
+
+  \item Explored various data sets, such as user interaction logs, manually annotated data, heuristically labelled ``eyes-off'' data using weak supervision and their combinations for model training (\href{https://snorkel.ai/}{Snorkel}). Conducted A/B testing to validate improvements.
+
+  \item Prototyped a complete pipeline for data extraction, feature extraction, training, and validation of a document-to-document recommendation system. Assisted a colleague in implementing an email-to-email recommendation prototype.
+
+  \item Developed a tool for explaining ML models predictions, aiding in error analysis and accelerating root cause detection. Contributed to other internal debugging tools. Provided supervision and mentorship for 3 interns and support for several colleagues, serving as a go-to person for the products we were implementing.
+
+  \end{itemize}
 
 \end{itemize}
 
 
 \smallvskip
-\whatwherewhen{Lead Application Developer}{\href{https://www.jpmorganchase.com/}
-  {JP Morgan}}{May 2017 - May 2018}
+\whatwherewhen{Lead Application Developer}{\href{https://www.jpmorganchase.com/}{JP Morgan}}{May 2017 - May 2018}
 
 \textit{Web services implementation.}
 
 \begin{itemize}
 
-\item Implementation of backends of monitoring systems for
-  tracking engineering practices of all bank applications and source code
-  repository commits. (\textsc{Java}, \textsc{Spring}, \textsc{Python},
-  \textsc{SQL}, \textsc{MongoDB}, \textsc{MariaDB}, \textsc{Oracle Database})
-  Phone screening interviews.
-
-\end{itemize}
-
-
-\smallvskip
-\whatwherewhen{Software Engineer}{\href{https://yandex.com/company/}{Yandex}}
-  {January 2016 - May 2017}
-
-\textit{Feature engineering for Internet video search and machine learning.}
-
-\begin{itemize}
-
-\item Implemented calculation of several new characteristics of Internet
-  videos and evaluated their usefulness as factors in
-  \href{https://yandex.com/company/technologies/matrixnet/}{MatrixNet}
-  machine learning algorithm, used in \href{https://yandex.com/video/}
-  {Yandex Video Search} to query and rank videos on a search result page.
-  Several of these factors contributed to improvement of video ranking
-  quality as demonstrated by several metrics. (\textsc{C++}, \textsc{Python},
-  \textsc{MapReduce}, \textsc{Machine Learning})
-
-\item Implemented machine learning pipeline and made several experiments of
-  large-scale web text classification for several tasks using logistic regression,
-  LSTM, word2vec and other algorithms. (\textsc{Natural Language Processing},
-  \textsc{Vowpal Wabbit}, \textsc{Deep Learning})
-
-\item Using this infrastructure for classification of YouTube videos allowed
-  to improve video ranking quality and click-through rate prediction.
-
-\item Collaborated across teams and made research to improve integration of
-  Video Search results on the main \href{https://yandex.com/}
-  {Yandex Web Search} page.
+\item Implemented backend systems for monitoring engineering practices and source code repository commits. (\textsc{Java}, \textsc{Spring}, \textsc{Python}, \textsc{SQL}, \textsc{MongoDB}, \textsc{MariaDB}, \textsc{Oracle Database}) Conducted phone screening interviews.
 
 \end{itemize}
 
@@ -234,187 +159,98 @@
 
 
 \smallvskip
-\whatwherewhen{Senior Software Development Engineer}{\href{http://intel.com}
-{Intel}}{February 2006 - December 2015}
+\whatwherewhen{Software Engineer}{\href{https://yandex.com/company/}{Yandex}}{January 2016 - May 2017}
 
-\textit{Applied research in performance analysis and implementation of
-performance tuning tools.}
+\textit{Feature engineering for Internet video search and machine learning.}
 
 \begin{itemize}
 
-\item Gained expertise in performance analysis of serial and parallel
-  software; algorithmic, threading and machine-dependent performance
-  optimization; CPU and hardware architecture; parallel, concurrent and
-  distributed software research and development (\textsc{MPI}, \textsc{OpenMP}).
+\item  Implemented new video characteristics for the \href{https://yandex.com/company/technologies/matrixnet/}{MatrixNet} machine learning algorithm, improving video ranking quality in \href{https://yandex.com/video/}{Yandex Video Search}. Several factors led to enhanced video ranking quality, as demonstrated by various metrics. (\textsc{C++}, \textsc{Python}, \textsc{MapReduce}, \textsc{Machine Learning})
 
-\item Implemented capability to represent knowledge about performance issues
-  in applications (using \textsc{Python} code) and their automatic detection for
-  \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}{Intel VTune
-  Amplifier} and \href{https://software.intel.com/en-us/intel-advisor-xe}
-  {Intel Advisor} products. (\textsc{Knowledge Representation})
+\item Developed a machine learning pipeline and conducted large-scale web text classification experiments using logistic regression, LSTM, word2vec, and other algorithms. (\textsc{Natural Language Processing}, \textsc{Deep Learning})
 
-\item Defined metrics and methodology to identify parts of an application
-  that are best suited for execution on main CPU or for offload to
-  \href{https://www.intel.com/content/www/us/en/products/processors/xeon-phi/xeon-phi-processors.html}
-  {Intel Xeon Phi} processor, and implemented a tool automate detection of such
-  parts.
+\item Utilized the developed infrastructure for YouTube video classification, improving video ranking quality and click-through rate.
 
-\item Implemented \href{https://web.archive.org/web/20151022144828/https://software.intel.com/en-us/node/561522}
-  {Performance Assistant} capability in
-  \href{http://software.intel.com/en-us/intel-trace-analyzer} {Intel Trace
-  Analyzer and Collector} for automatic detection of known performance issues
-  in MPI applications, based on results of my
-  \href{https://search.rsl.ru/ru/record/01005013870}{PhD thesis}.
-  (\textsc{C++}, \textsc{MPI}, \textsc{Knowledge Representation})
-
-\item Full cycle development (design, prototype, research, review, documentation,
-  planning, implementation, etc.) of new threading and performance profilers
-  \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}
-  {Intel VTune Amplifier} and \href{http://software.intel.com/en-us/articles/intel-performance-tuning-utility}
-  {Intel Performance Tuning Utility} from scratch. Responsibility for
-  several major data visualization and data provider components in these
-  products. (\textsc{C++}, \textsc{Java}, \textsc{Python}, \textsc{OpenMP},
-  \textsc{SQLite})
-  Mentorship (5 collegues).
-
-\item Implemented new approach for source-level performance information
-  visualization based on synchronized views in
-  \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}
-  {Intel VTune Amplifier} and \href{http://software.intel.com/en-us/articles/intel-performance-tuning-utility}
-  {Intel Performance Tuning Utility}, which unlocked new usage models for senior
-  performance engineers.
-
-\item Made refactoring of several central components (with MVVM pattern) by gradually
-  introducing ``true'' unit tests with TDD approach. Code duplication was reduced, bug
-  backlog was reduced by multiple times and stopped growing, but new features
-  were still implemented during this work.
+\item Collaborated across teams to improve integration of Video Search results on the main \href{https://yandex.com/}{Yandex Web Search} page.
 
 \end{itemize}
 
 
 \smallvskip
-\whatwherewhen{Lecturer, Research Advisor}{\href{http://unn.ru/eng}
-  {Lobachevsky State University of Nizhni Novgorod}}{2009 - 2012}
+\whatwherewhen{Senior Software Development Engineer}{\href{http://intel.com}{Intel}}{February 2006 - December 2015}
 
-\textit{Research and teaching Artificial Intelligence and Machine Learning.}
+\textit{Applied research in performance analysis and implementation of performance tuning tools.}
 
 \begin{itemize}
 
-\item Research advisor for 3 bachelor and 5 master students (topics in
-  artificial intelligence, machine learning, natural language
-  processing, software verification, parallel programming, software
-  engineering).
+\item Gained expertise in performance analysis of serial and parallel software; algorithmic, threading and machine-dependent performance optimization; CPU and hardware architecture; parallel, concurrent and distributed software research and development (\textsc{MPI}, \textsc{OpenMP}).
 
-\item Created content and taught courses ``Artificial Intelligence'' (2010, 2011),
-  ``Databases and Expert Systems'' (2009-2012).
+\item Developed a capability to represent knowledge about performance issues in applications (using \textsc{Python} code) and their automatic detection for \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}{Intel VTune Amplifier} and \href{https://software.intel.com/en-us/intel-advisor-xe}{Intel Advisor} products. (\textsc{Knowledge Representation})
 
-\item Assistant for
-  \href{http://se.inf.ethz.ch/courses/2012b_fall/dose/}{Distributed
-    and Outsourced Software Engineering project} (2011, 2012):
-  provided support for projects of students.
+\item Defined metrics and methodologies to identify parts of an application that are best suited for execution on CPUs or for offload to a coprocessor, and implemented a tool for automatic detection.
+
+\item Full-cycle development (design, prototype, research, review, documentation, planning, implementation, etc.) of the threading and performance profiler \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}{Intel VTune Amplifier} from scratch, including major data visualization and data provider components. (\textsc{C++}, \textsc{Java}, \textsc{Python}, \textsc{OpenMP}, \textsc{SQLite}) Mentorship (5 collegues).
+
+\item Implemented a new approach for source-level performance information visualization in \href{http://software.intel.com/en-us/intel-vtune-amplifier-xe}{Intel VTune Amplifier}, unlocking new usage models for senior performance engineers.
 
 \end{itemize}
 
 
 \smallvskip
-\whatwherewhen{Software Development Engineer}{\href{http://mera.ru/}{Mera}}{October 2003 - February 2006}
+\whatwherewhen{Lecturer, Research Advisor}{\href{http://unn.ru/eng}{Lobachevsky State University of Nizhni Novgorod}}{2009 - 2012}
+
+\textit{Research and teaching courses in Artificial Intelligence and Machine Learning.}
+
+\begin{itemize}
+
+\item Supervised 3 bachelor and 5 master students on topics including artificial intelligence, machine learning, natural language processing, software verification, parallel programming, and software engineering.
+
+\item Developed and taught courses ``Artificial Intelligence'' (2010, 2011), ``Databases and Expert Systems'' (2009-2012).
+
+\end{itemize}
+
+
+\smallvskip
+\whatwherewhen{Software Development Engineer}{\href{http://mera.ru/}{Mera Networks}}{October 2003 - February 2006}
 
 \textit{Telecommunication software implementation.}
 
 \begin{itemize}
 
-\item Development of cellular base stations emulation software.
-  (\textsc{C++}, \textsc{Java}, \textsc{Bash}, networking) Mentorship (3 collegues).
+\item Developed software for emulating cellular base stations. (\textsc{C++}, \textsc{Java}, \textsc{Bash}, \textsc{networking}) Mentored 3 colleagues.
+\item Contributed to a major redesign of the software's data model, significantly improving execution speed and memory consumption, allowing support for previously unsupported data volumes.
 
-\item Participated in major redesign of the data model part of this
-  software that resulted in significant improvements of execution
-  speed and memory consumption (allowing to handle previously
-  unsupported amount of data).
 \end{itemize}
 
 
 \section{Personal Projects}
 
 \begin{itemize}
-\item Small repository of various Jupyter notebooks:
-  \href{https://github.com/anton-dergunov/ml-playground}{https://github.com/anton-dergunov/ml-playground}
+\item Small repository of various Jupyter notebooks: \href{https://github.com/anton-dergunov/ml-playground}{https://github.com/anton-dergunov/ml-playground}
 \end{itemize}
 
 
 \section{Education}
 
-\whatwherewhen{PhD in Theoretical Computer Science}{\href{http://unn.ru}
-  {Lobachevsky State University of Nizhni Novgorod}}{July 2008 - July 2011}
+\whatwherewhen{PhD in Theoretical Computer Science}{\href{http://unn.ru}{Lobachevsky State University of Nizhni Novgorod}}{July 2008 - July 2011}
 
-Thesis: \href{https://search.rsl.ru/ru/record/01005013870}{Models, methods and
-tools of knowledge representation for improving performance of MPI
-applications}. Implemented some results of this work in
-\href{http://software.intel.com/en-us/intel-trace-analyzer} {Intel
-Trace Analyzer and Collector}, in its
-\href{https://software.intel.com/en-us/node/561522}{Performance Assistant}
-capability.
+Thesis: \href{https://search.rsl.ru/ru/record/01005013870}{Models, methods and tools of knowledge representation for improving performance of MPI applications}. 
+
+Implemented results from the thesis in \href{http://software.intel.com/en-us/intel-trace-analyzer}{Intel Trace Analyzer and Collector} and its \href{https://web.archive.org/web/20151022144828/https://software.intel.com/en-us/node/561522}{Performance Assistant} capability.
 
 \smallvskip
-\whatwherewhen{Specialist Degree in Applied Computer Science}
-  {\href{http://unn.ru}{Lobachevsky State University of Nizhni Novgorod}}
-  {September 2001 - May 2006}
+\whatwherewhen{Specialist Degree in Applied Computer Science}{\href{http://unn.ru}{Lobachevsky State University of Nizhni Novgorod}}{September 2001 - May 2006}
 
 Thesis: Neural network model for knowledge representation and extraction.
 
-% \smallvskip
-% \href{http://romip.ru/russir2013/}{Russian Summer School in Information Retrieval} \ding{105}
-% \href{https://iccl.inf.tu-dresden.de/web/ICCL_Summer_School_2013/en}{Semantic Web: Ontology Languages and Their Use} \ding{105}
-% \href{http://almada2013.ru/en}{MS School on ALgorithms for MAssive DAta} \ding{105}
-% \href{http://movep.lif.univ-mrs.fr/}{Winter School on Modeling and Verifying Parallel Processes} \ding{105}
-% \href{http://laser.inf.ethz.ch/2012/}{Summer School on Software Engineering: Innovative Languages for Software Engineering} \ding{105}
-% \href{https://web.archive.org/web/20120505213227/http://research.microsoft.com/en-us/events/rss2012/}{MS Summer School on Concurrency} \ding{105}
-% \href{https://web.archive.org/web/20110314093924/http://research.microsoft.com/en-us/um/redmond/events/sssev2011/}{MS Summer School in Software Engineering and Verification}
-
-
-%\section{Technical Skills}
-
-%\begin{tabular}{r|l}
-%Concepts &
-%Machine Learning, Artificial Intelligence, Natural Language Processing, Neural Networks, \\
-%&
-%Knowledge Representation, Big Data, Map Reduce, Performance Analysis and Tuning, \\
-%&
-%High-Performance Computing, Parallel, Concurrent and Distributed Software, \\
-%&
-%Object-Oriented Design, Design Patterns \\
-%Programming Languages &
-%\textsc{C++}, \textsc{C}, \textsc{Python}, \textsc{Java},
-%\textsc{SQL}, Unix shells \\
-%Operating systems &
-%\textsc{Windows}, various distributions of \textsc{Linux} \\
-%Other &
-%\textsc{MPI}, \textsc{OpenMP}, \textsc{PThreads}, \textsc{UML}, \LaTeX \\
-%Languages &
-%English (fluent), Italian (basic), German (learning), Russian (native).
-%\end{tabular}
 
 \section{Publications}
 
 \begin{itemize}
-\item Anton
-  Dergunov. \href{http://anton-dergunov.ru/publications/proving_complexity_v2.pdf}
-  {Proving Termination and Computational Complexity of Computer
-  Programs}. Abstract of poster for ``CSEDays. Algorithms and Complexity''
-  summer school.
-\item Anton
-  Dergunov. \href{http://themonadreader.files.wordpress.com/2013/08/issue221.pdf}
-  {Generalized algebraic data types in Haskell}.
-  The Monad.Reader Issue 22, pp. 5-39. Etc.
-\item Anton
-  Dergunov. \href{http://anton-dergunov.ru/publications/mpi_performance.pdf}
-  {Specification and automatic detection of performance problems in
-    message passing (MPI) applications}. Radioelectronic and Computer
-  Systems, 2012, 7(59), pp. 217-222.
-\item Anton Dergunov. \href{http://pavt.susu.ru/2012/full/159.pdf}
-  {Expert methodology for performance analysis of communicating
-    processes in MPI applications}. In proceedings of conference
-  ``Parallel Computational Technologies'', Chelyabinsk (Russia),
-  2012., pp. 134-144 (in Russian).
+\item Anton Dergunov. \href{http://anton-dergunov.ru/publications/proving_complexity_v2.pdf}{Proving Termination and Computational Complexity of Computer Programs}. Abstract of poster for ``CSEDays. Algorithms and Complexity'' summer school.
+\item Anton Dergunov. \href{http://themonadreader.files.wordpress.com/2013/08/issue221.pdf}{Generalized algebraic data types in Haskell}. The Monad.Reader Issue 22, pp. 5-39. Etc.
+\item Anton Dergunov. \href{http://anton-dergunov.ru/publications/mpi_performance.pdf}{Specification and automatic detection of performance problems in message passing (MPI) applications}. Radioelectronic and Computer Systems, 2012, 7(59), pp. 217-222.
+\item Anton Dergunov. \href{http://pavt.susu.ru/2012/full/159.pdf}{Expert methodology for performance analysis of communicating processes in MPI applications}. In proceedings of conference ``Parallel Computational Technologies'', Chelyabinsk (Russia), 2012., pp. 134-144 (in Russian).
 \item Personal blog on machine learning: \href{https://anton-dergunov.github.io/blog/}{https://anton-dergunov.github.io/blog/}
 
 \end{itemize}

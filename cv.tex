@@ -38,7 +38,7 @@
 
 \usepackage{titlesec} % for customizing \section
 \titleformat{\section}{\color{headings-color}\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
-\titlespacing{\section}{0pt}{0pt}{5pt} % spacing around titles
+\titlespacing{\section}{0pt}{0pt}{2pt} % spacing around titles
 
 \newcommand{\whatwherewhen}[3]{
 \noindent\begin{tabular*}{\columnwidth}{@{}@{\extracolsep{\fill}}lr@{}}
@@ -105,9 +105,11 @@
 
 \begin{itemize}
 
-\item People Search:
+\item \href{https://www.microsoft.com/en-gb/microsoft-copilot/organizations}{Copilot} and People Search:
 
   \begin{itemize}
+
+  \item Improving semantic search for people/contacts in Copilot, support for natural language queries. (\textsc{LLMs}, \textsc{ChatGPT}, \textsc{RAG})
 
   \item Built from scratch the pipeline for collecting ``eyes-off'' training and testing data, monitoring its quality, and training ranking and classification models with offline evaluation, producing a model ready for product integration. Optimized the pipeline's performance to process large volumes of click log data. The model is used for \href{https://www.youtube.com/watch?v=a6HO4ekmmjU}{people ranking in many Microsoft products} (such as Teams, Outlook, Bing, Windows). Deployed several models using this pipeline to production, demonstrating online metrics improvements (such as up to a 4\% increase in click-through rate and improvements in time to success). (\textsc{Azure Machine Learning}, \textsc{Python}, \textsc{PySpark}, \textsc{LightGBM}, \textsc{ONNX}, \textsc{Gradient Boosting})
 

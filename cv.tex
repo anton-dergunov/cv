@@ -109,7 +109,13 @@
 
   \begin{itemize}
 
-  \item Enhanced the quality semantic (natural language) search for people/contacts in \href{https://www.microsoft.com/en-us/microsoft-365/copilot}{Microsoft 365 Copilot}. Performed evaluation of embedding models and cross encoders, leveraging LLM-based assessments and synthetic data generation. (\textsc{LLMs}, \textsc{ChatGPT}, \textsc{RAG})
+  \item Enhanced the quality semantic (natural language) search for people/contacts in \href{https://www.microsoft.com/en-us/microsoft-365/copilot}{Microsoft 365 Copilot}. Performed evaluation of embedding models, cross encoders and other retrieval techniques, leveraging LLM-based assessments and synthetic data generation (NDCG@10 up 5.3\% to 19.1\%, PR@10 up 5.8\% to 15.7\% depending on the setup, offline dataset, comparing to previous solution). (\textsc{LLMs}, \textsc{ChatGPT}, \textsc{RAG})
+
+% Comparison with previous model:
+% |              | PR@10   | NDCG@10 |
+% | OpenAI       | 0.157   | 0.191   |
+% | FBV          | 0.058   | 0.053   |
+% | FBV + Rerank | 0.120   | 0.152   |
 
   \item Built from scratch the pipeline for collecting ``eyes-off'' training and testing data, monitoring its quality, and training ranking and classification models with offline evaluation, producing a model ready for product integration. Optimized the pipeline's performance to process large volumes of click log data. The model is used for \href{https://www.youtube.com/watch?v=a6HO4ekmmjU}{people ranking in many Microsoft products} (such as Teams, Outlook, Bing, Windows). Deployed several models using this pipeline to production, demonstrating online metrics improvements (such as up to a 4\% increase in click-through rate and improvements in time to success). (\textsc{Azure Machine Learning}, \textsc{Python}, \textsc{PySpark}, \textsc{LightGBM}, \textsc{ONNX}, \textsc{Gradient Boosting})
 

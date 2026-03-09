@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{fontspec}
+\usepackage{xcolor}
+
+\definecolor{headings-color}{HTML}{690E0F}
+
+% Prefer local commercial font if present
+\IfFontExistsTF{fonts/ZapfinoExtraLT-Three.otf}{
+  \typeout{*** Using local ZapfinoExtraLT-Three.otf ***}
+  \newfontfamily\logofont[
+    Path=fonts/,
+    Scale=MatchUppercase
+  ]{ZapfinoExtraLT-Three.otf}
+}{
+  % Fallback to system Zapfino
+  \typeout{*** Using system Zapfino ***}
+  \newfontfamily\logofont[
+    Scale=MatchUppercase
+  ]{Zapfino}
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+{\fontsize{25}{25}\selectfont
+\color{headings-color}\logofont Curriculum Vitae
+}
+
+\end{document}

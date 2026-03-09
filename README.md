@@ -36,6 +36,95 @@ output/     final generated PDF
 formats/    alternative formats
 ```
 
+
+---
+
+## Editing in VS Code
+
+If you edit the CV in **VS Code** using the **LaTeX Workshop** extension, you can enable automatic compilation and a live PDF preview.
+
+Add the following configuration to your **VS Code `settings.json`**:
+
+```json
+"latex-workshop.latex.outDir": "%DIR%/../build",
+"latex-workshop.latex.tools": [
+    {
+        "name": "latexmk",
+        "command": "/Library/TeX/texbin/latexmk",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "-outdir=%OUTDIR%",
+            "%DOC%"
+        ],
+        "env": { "PATH": "/Library/TeX/texbin:/usr/bin:/bin:/usr/sbin:/sbin" }
+    }
+],
+"latex-workshop.latex.recipes": [
+    {
+        "name": "latexmk",
+        "tools": ["latexmk"]
+    }
+],
+```
+
+This configuration ensures that:
+
+- all temporary LaTeX build files are written to `build/`
+- the `src/` directory remains clean
+- VS Code can correctly find and execute `latexmk`
+
+---
+
+### Finding the `latexmk` Path
+
+The exact path to `latexmk` depends on your operating system and LaTeX distribution.
+
+You can locate it with:
+
+```
+which latexmk
+```
+
+Example outputs:
+
+**macOS (MacTeX)**
+
+```
+/Library/TeX/texbin/latexmk
+```
+
+**Linux (TeX Live)**
+
+```
+/usr/bin/latexmk
+```
+
+**Windows (MiKTeX or TeX Live)**
+
+```
+C:\texlive\2024\bin\windows\latexmk.exe
+```
+
+Replace the `"command"` value in the configuration above with the path returned by `which latexmk`.
+
+You may also need to adjust the `PATH` variable in the configuration so that the directory containing `latexmk` is included.
+
+---
+
+### Viewing the PDF in VS Code
+
+After adding the configuration:
+
+1. Open `src/cv.tex` in VS Code.
+2. Click **“View LaTeX PDF”** in the editor toolbar.
+
+VS Code will open a **side-by-side PDF preview**.
+
+When you **save the `.tex` file**, the PDF preview will **automatically rebuild and refresh**.
+
 ---
 
 ## Logo

@@ -6,6 +6,7 @@ on:
       - "src/**"
       - "assets/**"
       - "Makefile"
+      - ".github/workflows/build.yml"
 
 jobs:
   build:
@@ -17,9 +18,10 @@ jobs:
       - name: Install LaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          latexmk_use_xelatex: false
+          root_file: src/cv.tex
+          compile: false
 
-      - name: Build CV
+      - name: Build
         run: make
 
       - name: Upload artifact

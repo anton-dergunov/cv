@@ -4,6 +4,15 @@ LaTeX source for my resume.
 
 The repository contains the complete source required to reproduce the final PDF.
 
+## Download
+
+Latest CV:
+
+- [PDF](output/Anton_Dergunov.pdf)
+- [DOCX](formats/Anton_Dergunov.docx)
+- [ODT](formats/Anton_Dergunov.odt)
+- [RTF](formats/Anton_Dergunov.rtf)
+
 ## Build
 
 Requirements:

@@ -2,28 +2,28 @@ name: Build CV
 
 on:
   push:
-    branches: [ main ]
+    paths:
+      - "src/**"
+      - "assets/**"
+      - "Makefile"
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Install LaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/cv.tex
+          latexmk_use_xelatex: false
 
-      - name: Rename output
-        run: |
-          mkdir -p output
-          cp cv.pdf output/Anton_Dergunov.pdf
+      - name: Build CV
+        run: make
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Anton_Dergunov_CV
-          path: output/Anton_Dergunov.pdf
+          name: cv
+          path: output/*.pdf

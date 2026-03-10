@@ -15,23 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Debug repository structure
-        run: |
-          pwd
-          ls -R
-
-      - name: Test logo file
-        run: |
-          ls assets/logo-crop.pdf
-
-      - name: Install LaTeX
+      - name: Compile LaTeX CV
         uses: xu-cheng/latex-action@v3
         with:
           root_file: src/cv.tex
-          compile: false
-
-      - name: Build
-        run: make
+          work_in_root_file_dir: true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

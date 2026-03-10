@@ -1,0 +1,29 @@
+name: Build CV
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: src/cv.tex
+
+      - name: Rename output
+        run: |
+          mkdir -p output
+          cp cv.pdf output/Anton_Dergunov.pdf
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Anton_Dergunov_CV
+          path: output/Anton_Dergunov.pdf
